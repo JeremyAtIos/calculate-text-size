@@ -35,10 +35,10 @@ class ViewController: UIViewController {
     private func createFrameLabel() {
         frameLabel.text = "这是一段多行文本，这是一段多行文本，这是一段多行文本，这是一段多行文本，这是一段多行文本"
         frameLabel.textColor = .green
+        frameLabel.numberOfLines = 0
         view.addSubview(frameLabel)
         let size = frameLabel.sizeThatFits(CGSize(width: view.bounds.size.width - 16.0, height: 1000))
         frameLabel.frame = CGRect(x: 8, y: 200, width: size.width, height: size.height)
-        frameLabel.numberOfLines = 0
     }
 }
 
