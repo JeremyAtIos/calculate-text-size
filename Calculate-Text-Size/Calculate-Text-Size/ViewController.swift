@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 分别在使用 AutoLayout 和 Frame 进行布局时，让 Label 根据其内容自适应宽高。
         createAutoLayoutLabel()
         createFrameLabel()
     }
