@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7AE17B4F20C7839100DA33D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE17B4E20C7839100DA33D7 /* AppDelegate.swift */; };
-		7AE17B5120C7839100DA33D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE17B5020C7839100DA33D7 /* ViewController.swift */; };
+		7AE17B5120C7839100DA33D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE17B5020C7839100DA33D7 /* MainViewController.swift */; };
 		7AE17B5420C7839100DA33D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17B5220C7839100DA33D7 /* Main.storyboard */; };
 		7AE17B5620C7839200DA33D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17B5520C7839200DA33D7 /* Assets.xcassets */; };
 		7AE17B5920C7839200DA33D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE17B5720C7839200DA33D7 /* LaunchScreen.storyboard */; };
 		7AE17B6420C7839200DA33D7 /* Calculate_Text_SizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE17B6320C7839200DA33D7 /* Calculate_Text_SizeTests.swift */; };
 		7AE17B6F20C7839200DA33D7 /* Calculate_Text_SizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE17B6E20C7839200DA33D7 /* Calculate_Text_SizeUITests.swift */; };
+		7AE17B7D20C7F0D000DA33D7 /* String+XWExtesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE17B7C20C7F0D000DA33D7 /* String+XWExtesion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		7AE17B4B20C7839100DA33D7 /* Calculate-Text-Size.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculate-Text-Size.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE17B4E20C7839100DA33D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AE17B5020C7839100DA33D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AE17B5020C7839100DA33D7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7AE17B5320C7839100DA33D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AE17B5520C7839200DA33D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE17B5820C7839200DA33D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		7AE17B6A20C7839200DA33D7 /* Calculate-Text-SizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calculate-Text-SizeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE17B6E20C7839200DA33D7 /* Calculate_Text_SizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate_Text_SizeUITests.swift; sourceTree = "<group>"; };
 		7AE17B7020C7839200DA33D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE17B7C20C7F0D000DA33D7 /* String+XWExtesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+XWExtesion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				7AE17B4E20C7839100DA33D7 /* AppDelegate.swift */,
-				7AE17B5020C7839100DA33D7 /* ViewController.swift */,
+				7AE17B5020C7839100DA33D7 /* MainViewController.swift */,
+				7AE17B7C20C7F0D000DA33D7 /* String+XWExtesion.swift */,
 				7AE17B5220C7839100DA33D7 /* Main.storyboard */,
 				7AE17B5520C7839200DA33D7 /* Assets.xcassets */,
 				7AE17B5720C7839200DA33D7 /* LaunchScreen.storyboard */,
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE17B5120C7839100DA33D7 /* ViewController.swift in Sources */,
+				7AE17B5120C7839100DA33D7 /* MainViewController.swift in Sources */,
 				7AE17B4F20C7839100DA33D7 /* AppDelegate.swift in Sources */,
+				7AE17B7D20C7F0D000DA33D7 /* String+XWExtesion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

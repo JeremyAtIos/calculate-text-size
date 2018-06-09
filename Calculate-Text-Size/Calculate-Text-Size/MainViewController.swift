@@ -8,17 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     let autoLayoutLabel = UILabel()
     let frameLabel = UILabel()
+    let boundingLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // 分别在使用 AutoLayout 和 Frame 进行布局时，让 Label 根据其内容自适应宽高。
+
         createAutoLayoutLabel()
         createFrameLabel()
+        createBoundingLabel()
     }
     
     private func createAutoLayoutLabel() {
@@ -37,8 +38,14 @@ class ViewController: UIViewController {
         frameLabel.textColor = .green
         frameLabel.numberOfLines = 0
         view.addSubview(frameLabel)
-        let size = frameLabel.sizeThatFits(CGSize(width: view.bounds.size.width - 16.0, height: 1000))
+        let size = frameLabel.sizeThatFits(CGSize(width: view.bounds.size.width - 16.0, height: 0))
         frameLabel.frame = CGRect(x: 8, y: 200, width: size.width, height: size.height)
+    }
+    
+    private func createBoundingLabel() {
+        let annotation = "分别在使用 AutoLayout 和 Frame 进行布局时，让 Label 根据其内容自适应宽高。"
+        let rect = annotation.xw_boundingRect(with: CGSize.zero, font: UIFont.systemFont(ofSize: 14.0))
+        print(rect)
     }
 }
 
